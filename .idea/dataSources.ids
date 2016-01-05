@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="H2 - test" uuid="b009c2d6-60d8-41d1-882c-d9ffedfaf3d9">
+    <database-info product="H2" version="1.3.176 (2014-04-05)" jdbc-version="4.0" driver-name="H2 JDBC Driver" driver-version="1.3.176 (2014-04-05)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <schema name="PUBLIC" catalog="TEST"/>
+  </data-source>
+  <data-source name="MySQL - test@localhost" uuid="e05f5b9b-5136-4e17-9463-e092e1ee550b">
+    <database-info product="MySQL" version="5.7.9-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="test"/>
+      <table id="2" parent="1" name="error_logs"/>
+      <column id="3" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="4" parent="2" name="agent_detail">
+        <data-type>text</data-type>
+      </column>
+      <column id="5" parent="2" name="alert_yn">
+        <data-type>varchar(1)</data-type>
+      </column>
+      <column id="6" parent="2" name="error_datetime">
+        <data-type>tinyblob</data-type>
+      </column>
+      <column id="7" parent="2" name="header_map">
+        <data-type>text</data-type>
+      </column>
+      <column id="8" parent="2" name="host_name">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="9" parent="2" name="logger_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="10" parent="2" name="message">
+        <data-type>text</data-type>
+      </column>
+      <column id="11" parent="2" name="parameter_map">
+        <data-type>text</data-type>
+      </column>
+      <column id="12" parent="2" name="path">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="13" parent="2" name="phase">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="14" parent="2" name="server_name">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="15" parent="2" name="system">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="16" parent="2" name="trace">
+        <data-type>text</data-type>
+      </column>
+      <column id="17" parent="2" name="user_info">
+        <data-type>text</data-type>
+      </column>
+      <key id="18" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
